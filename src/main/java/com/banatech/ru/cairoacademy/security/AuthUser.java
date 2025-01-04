@@ -1,8 +1,6 @@
 package com.banatech.ru.cairoacademy.security;
 
 import com.banatech.ru.cairoacademy.model.User;
-import lombok.Data;
-import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -13,7 +11,7 @@ import java.util.stream.Collectors;
 
 
 @RequiredArgsConstructor
-public class AuthUser implements UserDetails {
+public class AuthUserDetails implements UserDetails {
 
     private final User user;
 
